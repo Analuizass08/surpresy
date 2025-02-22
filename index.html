@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feliz 3 anos!</title>
+
+ 
+</head>
+<body>
+
+    <div class="painel">
+<h1> Feliz 3 anos de namoro!!!</h1>
+       
+<img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-beijos.gif"alt="">
+
+<a href="https://gamma.app/embed/zhfbkfwib8l92w9"><button id="motivos"> Motivos para se casar comigo! </button></a>
+  
+<h2>Aceita se casar comigo? </h2>
+       <a href="https://www.youtube.com/watch?v=oRvND-r57Us"><button id="sim" > Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+        
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
